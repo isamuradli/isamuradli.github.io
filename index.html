@@ -9,6 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript">
+      function toggle(id) {
+        var e = document.getElementById(id);
+        e.style.display = (e.style.display === 'none') ? 'block' : 'none';
+      }
+    </script>
 
   </head>
 
@@ -95,17 +101,24 @@
                 <br>
                 <em>IEEE International Conference on eScience (eScience)</em>, 2025
                 <br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11181551">paper</a>
-                <details style="display:inline">
-                  <summary style="display:inline;cursor:pointer">bibtex</summary>
-                  <pre style="white-space:pre-wrap;font-size:small;background:#f6f6f6;padding:8px;border-radius:4px;">@inproceedings{muradli2025nixl,
-  title     = {Insights into GPUDirect Data Transfer through NIXL Benchmarking},
+                <a href="https://ieeexplore.ieee.org/document/11181551">paper</a> /
+                <a href="https://doi.org/10.1109/eScience65000.2025.00075">doi</a> /
+                <a class="tog" onclick="toggle('abs_nixl')" style="cursor:pointer">abstract</a> /
+                <a class="tog" onclick="toggle('bib_nixl')" style="cursor:pointer">bibtex</a>
+                <div id="abs_nixl" style="display:none">
+                  <p style="font-size:small">Scientific applications are turning to GPUs to analyze and produce data due to advances in AI technologies. However, getting data to the GPU from storage is a challenge. Although technologies such as NVIDIA GDS and NIXL exist, limited research has been conducted on the actual benefits and trade-offs of these technologies. Our motivation is to explore the benefits and trade-offs of using GDS and the NIXL library by running benchmarking experiments.</p>
+                </div>
+                <pre id="bib_nixl" style="display:none;white-space:pre-wrap;font-size:small;background:#f6f6f6;padding:8px;border-radius:4px;">@inproceedings{muradli2025insights,
   author    = {Muradli, Isa and Ye, Jie and Logan, Luke and Kougkas, Anthony and Sun, Xian-He},
-  booktitle = {2025 IEEE International Conference on e-Science (e-Science)},
+  booktitle = {2025 IEEE International Conference on eScience (eScience)},
+  title     = {Insights into GPUDirect Data Transfer through NIXL Benchmarking},
   year      = {2025},
-  organization = {IEEE}
+  pages     = {369-370},
+  doi       = {10.1109/eScience65000.2025.00075},
+  publisher = {IEEE Computer Society},
+  address   = {Los Alamitos, CA, USA},
+  month     = sep
 }</pre>
-                </details>
               </td>
             </tr>
 
@@ -115,21 +128,28 @@
                   <span class="papertitle">Towards an AI-Driven Scientific Workflow</span>
                 </a>
                 <br>
-                Shehzad Islam, Jaime Cernuda, <strong>Isa Muradli</strong>, Anthony Kougkas, Xian-He Sun
+                Shazzadul Islam, Jaime Cernuda, <strong>Isa Muradli</strong>, Anthony Kougkas, Xian-He Sun
                 <br>
                 <em>IEEE International Conference on eScience (eScience)</em>, 2025
                 <br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11181489">paper</a>
-                <details style="display:inline">
-                  <summary style="display:inline;cursor:pointer">bibtex</summary>
-                  <pre style="white-space:pre-wrap;font-size:small;background:#f6f6f6;padding:8px;border-radius:4px;">@inproceedings{islam2025aidriven,
-  title     = {Towards an AI-Driven Scientific Workflow},
-  author    = {Islam, Shehzad and Cernuda, Jaime and Muradli, Isa and Kougkas, Anthony and Sun, Xian-He},
-  booktitle = {2025 IEEE International Conference on e-Science (e-Science)},
+                <a href="https://ieeexplore.ieee.org/document/11181489">paper</a> /
+                <a href="https://doi.org/10.1109/eScience65000.2025.00074">doi</a> /
+                <a class="tog" onclick="toggle('abs_aiwf')" style="cursor:pointer">abstract</a> /
+                <a class="tog" onclick="toggle('bib_aiwf')" style="cursor:pointer">bibtex</a>
+                <div id="abs_aiwf" style="display:none">
+                  <p style="font-size:small">Modern scientific computing requires researchers to navigate a complex ecosystem of disconnected tools and technologies. A typical computational workflow follows sequential stages&mdash;data gathering, resource allocation, application deployment, and data analysis&mdash;each requiring distinct tools and manual management, diverting scientists from hypothesis-driven discovery to computational housekeeping. Rapidly evolving and diverse computing architectures intensify the problem, demanding specialized tools to meet High Performance Computing (HPC) needs for massive data volumes and extreme performance requirements. This requires researchers to adapt their workflows to new hardware and programming models, leading to productivity barriers as they must master dozens of tools before beginning scientific investigations.</p>
+                </div>
+                <pre id="bib_aiwf" style="display:none;white-space:pre-wrap;font-size:small;background:#f6f6f6;padding:8px;border-radius:4px;">@inproceedings{islam2025towards,
+  author    = {Islam, Shazzadul and Cernuda, Jaime and Muradli, Isa and Kougkas, Anthony and Sun, Xian-He},
+  booktitle = {2025 IEEE International Conference on eScience (eScience)},
+  title     = {Towards an AI-driven scientific workflow},
   year      = {2025},
-  organization = {IEEE}
+  pages     = {367-368},
+  doi       = {10.1109/eScience65000.2025.00074},
+  publisher = {IEEE Computer Society},
+  address   = {Los Alamitos, CA, USA},
+  month     = sep
 }</pre>
-                </details>
               </td>
             </tr>
 
